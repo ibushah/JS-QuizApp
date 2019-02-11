@@ -23,10 +23,12 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="../../index.html">Home</a></li>
-                        <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
+                        <li><a href="../../index.html">Logout</a></li>
+
+                        <!-- <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
                         <li><a href="collapsible.html">Admin Dashboard</a></li>
                         <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="../../images/fb.png" /> Student
-                                Login</a></li>
+                                Login</a></li> -->
                     </ul>
                 </div>
             </nav>
@@ -36,44 +38,136 @@
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="#">Admin Login</a></li>
-            <li><a href="#">Admin Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+            <!-- <li><a href="#">Admin Dashboard</a></li>
             <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./../../images/fb.png" />Student
                     Login</a>
-            </li>
+            </li> -->
         </ul>
 
-         <!-- **********************SCRIPT************** -->
-         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-         <!-- Compiled and minified JavaScript -->
- 
- 
- 
-         <script src='../../UI/js/materialize.min.js'></script>
- 
- 
-         <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-         <script>
-             // Initialize Firebase
-             var config = {
-                 apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
-                 authDomain: "quizappjs-43873.firebaseapp.com",
-                 databaseURL: "https://quizappjs-43873.firebaseio.com",
-                 projectId: "quizappjs-43873",
-                 storageBucket: "quizappjs-43873.appspot.com",
-                 messagingSenderId: "100363478078"
-             };
-             firebase.initializeApp(config);
-         </script>
-         <script src="./AdminDashboard.js"></script>
-         <script>
- 
-             $('.dropdown-trigger').dropdown();
- 
-             $(document).ready(function () {
-                 $('.sidenav').sidenav();
-             });
-         </script>
+        <!-- ****************MODAL BTNS************* -->
+        <div class="container btnHead">
+            <div class="row">
+                <div class="col m6 l6 s6">
+                    <button class="btn upBtns hoverable" id="showTest"> Create Test</button>
+                </div>
+                <div class="col m6 l6 s6">
+                    <button class="btn upBtns hoverable" id="showScore">Students Score</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ****************TEST CREATION HTML**************     -->
+
+
+
+        <div class="container z-depth-3" id="testHead">
+            <div class="row ">
+                <div class="col s12  m6 offset-m3 l10 offset-l1 wrapField ">
+                    <div class="row">
+                        <div class="col s10 push-s1  m10 psuh-m1 l8 push-l2 ">
+                            <input type="text" style="text-align:center;" class="inp" placeholder="Test Category">
+                        </div>
+
+                    </div>
+                    <!-- <div class="row">
+                        <h5 style="text-align:center;color: white;font-weight:bold;">QUESTION</h5>
+                    </div> -->
+                    <div class="row">
+                        <div class="col s12 m12 l12 ">
+                            <input type="text" class="inp" placeholder="Question">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m6 l6 ">
+                            <input type="text" class="inp" placeholder="Option1">
+                        </div>
+                        <div class="col s6 m6 l6">
+                            <input type="text" class="inp" placeholder="Option2">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s6 m6 l6">
+                            <input type="text" class="inp" placeholder="Option3">
+                        </div>
+                        <div class="col s6 m6 l6">
+                            <input type="text" class="inp" placeholder="Option4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1  m8 offset-m2 l6 offset-l3">
+                            <div class="input-field col s12 select">
+                                <select>
+                                   <option value="" disabled selected>Correct Ans</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col m6 l6 s6">
+                                <button class="btn hoverable downBtns">NEXT</button>
+                            </div>
+                            <div class="col m6 l6 s6">
+                                <button class="btn hoverable downBtns" >SUBMIT</button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- *************************/************************** -->
+
+
+
+
+        <!-- ***********************STUDENT SCORES****************** -->
+
+
+
+
+
+
+        <!-- **********************SCRIPT************** -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+
+
+
+        <script src='../../UI/js/materialize.min.js'></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
+                authDomain: "quizappjs-43873.firebaseapp.com",
+                databaseURL: "https://quizappjs-43873.firebaseio.com",
+                projectId: "quizappjs-43873",
+                storageBucket: "quizappjs-43873.appspot.com",
+                messagingSenderId: "100363478078"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="./AdminDashboard.js"></script>
+        <script>
+
+            $('.dropdown-trigger').dropdown();
+
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+        </script>
 </body>
 
 </html>

@@ -1,0 +1,122 @@
+/* initial css */
+
+*
+{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body
+{
+    background-color: #FFFFFF;
+    height: 105vh;
+}
+
+
+/* **********LOGO********* */
+
+
+
+#logo::first-letter{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+#logo
+{
+    margin-left: 5px !important;
+}
+
+#icon_prefix
+{
+   color: wheat !important;
+   font-style: oblique;
+}
+
+
+
+/* ********NAVBAR********* */
+
+nav
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+    margin-top: -10px;
+}
+
+#mobile-demo
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+}
+
+#mobile-demo li a
+{
+    color: white;
+}
+
+#mobile-demo li:hover
+{
+    background-color: rgb(10, 96, 175);
+}
+
+.btnHead
+{
+    margin-top: 2%;
+}
+.upBtns
+{
+    width: 100%;
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+}
+
+
+/* ***************BODY STYLING***************** */
+
+#testHead
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+    height: 490px;
+    border-radius: 30px  0px 30px 0px !important;
+    
+}
+
+.inp{
+    width: 100%;
+    background-color: white !important; 
+    border-radius: 5px  0px 5px 0 !important;
+    text-indent: 5px;
+    border:2px outset rgb(255, 238, 238) !important;
+  
+}
+.wrapField
+{
+    margin-top: 2%;
+}
+
+.select
+{
+    background-color: white !important;
+    border:2px outset rgb(255, 238, 238) !important;
+    border-radius: 5px  0px 5px 0 !important;
+}
+
+.downBtns
+{
+    background-color: white !important;
+    color: rgb(10, 96, 175);
+    width:100%;
+    font-weight: bold;
+}
+
+.label
+{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 90px;
+}
+
+option
+{
+    color:rgb(43, 144, 238) !important;
+}
