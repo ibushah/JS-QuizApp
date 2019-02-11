@@ -1,0 +1,118 @@
+/* initial css */
+
+*
+{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+
+/* **********LOGO********* */
+
+
+
+#logo::first-letter{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+#logo
+{
+    margin-left: 5px !important;
+}
+
+#icon_prefix
+{
+   color: wheat !important;
+   font-style: oblique;
+}
+
+
+
+/* ********NAVBAR********* */
+
+nav
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+    margin-top: -10px;
+}
+
+#mobile-demo
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+}
+
+#mobile-demo li a
+{
+    color: white;
+}
+
+#mobile-demo li:hover
+{
+    background-color: rgb(10, 96, 175);
+}
+
+
+#fb
+{
+    width:23px;
+    float: left;
+    margin-top:22px; 
+    margin-right: 8px; 
+}
+#fb-li
+{
+    border: 1px solid rgb(14, 51, 153);
+    border-radius: 4px;
+    background-color:#3B5998 !important;
+}
+#fb-li:hover
+{
+    background-color: rgb(59, 159, 247) !important;
+    color:blue;
+}
+
+
+
+#fb-mob
+{
+    width:23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 4px;
+}
+/* body styling */
+
+#h1
+{
+    font-size:500%;
+    text-align: center;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   
+
+}
+
+#whole
+{
+    width: 100%;
+    background-color:#0877c7;
+    margin-top: 10%;
+    height: 200px;
+    border: 2px outset rgb(216, 213, 213);
+
+}
+
+#h1::first-letter
+{
+    font-size: 100px;
+
+}
+

@@ -1,0 +1,89 @@
+/* initial css */
+
+*
+{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+
+/* **********LOGO********* */
+
+
+
+#logo::first-letter{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+#logo
+{
+    margin-left: 5px !important;
+}
+
+#icon_prefix
+{
+   color: wheat !important;
+   font-style: oblique;
+}
+
+
+
+/* ********NAVBAR********* */
+
+nav
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+    margin-top: -10px;
+}
+
+#mobile-demo
+{
+    background: linear-gradient(90deg,#0877c7,#2282c2);
+}
+
+#mobile-demo li a
+{
+    color: white;
+}
+
+#mobile-demo li:hover
+{
+    background-color: rgb(10, 96, 175);
+}
+
+
+#fb
+{
+    width:23px;
+    float: left;
+    margin-top:22px; 
+    margin-right: 8px; 
+}
+#fb-li
+{
+    border: 1px solid rgb(14, 51, 153);
+    border-radius: 4px;
+    background-color:#3B5998 !important;
+}
+#fb-li:hover
+{
+    background-color: rgb(204, 12, 12) !important;
+    color:white;
+}
+
+
+
+#fb-mob
+{
+    width:23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 4px;
+}

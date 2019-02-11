@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="../../UI/css/materialize.min.css">
+    <link rel="stylesheet" href="./Login.css">
+</head>
+
+<body>
+    <!-- ************NAVBAR*********** -->
+    <div class="container-fluid">
+        <div class="navbar-fixed ">
+            <nav>
+                <div class="nav-wrapper hoverable ">
+                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right"></i>QUIZ APP</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
+                        <li><a href="collapsible.html">Admin Dashboard</a></li>
+                        <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="../../images/fb.png" /> Student
+                                Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- *****************MOBILE VIEW**************** -->
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Admin Login</a></li>
+            <li><a href="#">Admin Dashboard</a></li>
+            <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./../../images/fb.png" />Student
+                    Login</a>
+            </li>
+        </ul>
+
+
+        <!-- ****************BELOW NAVBAARRRRR************** -->
+
+
+
+
+        <div class="row ">
+            <form class="col offset-s1 s10 push-l6 l5 offset-m2 m8 z-depth-4 hoverable loginWrap" id="adminForm">
+                <div id="form">
+
+                    <!-- ******************FORM HEADER************** -->
+                    
+                    <h3 id="h3">ADMIN LOGIN</h3>
+
+
+                    <div class="row">
+
+                        <div class="input-field col m12 lg12 s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="email"  type="email" class="validate">
+                            <label for="email">First Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col m12 lg12 s12">
+                            <i class="material-icons prefix">https</i>
+                            <input  id="password" type="password" class="validate">
+                            <label for="password"> Password</label>
+                        </div>
+
+
+                    </div>
+
+                    <!-- ***************SUBMIT BTN*************** -->
+
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right" id="btn-icon">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- **********************SCRIPT************** -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+
+
+
+        <script src='../../UI/js/materialize.min.js'></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
+                authDomain: "quizappjs-43873.firebaseapp.com",
+                databaseURL: "https://quizappjs-43873.firebaseio.com",
+                projectId: "quizappjs-43873",
+                storageBucket: "quizappjs-43873.appspot.com",
+                messagingSenderId: "100363478078"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="./Login.js"></script>
+        <script>
+
+            $('.dropdown-trigger').dropdown();
+
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="./UI/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ************NAVBAR*********** -->
+    <div class="container-fluid">
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper ">
+                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right"></i>QUIZ APP</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li  class="active"><a href="#">Home</a></li>
+                        <li id="add"><a href="./Pages/Login/Login.html">Admin Login</a></li>
+                        <li><a href="collapsible.html">Admin Dashboard</a></li>
+                        <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="./images/fb.png" /> Student
+                                Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- *****************MOBILE VIEW**************** -->
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="./Pages/Login/Login.html">Admin Login</a></li>
+            <li><a href="#">Admin Dashboard</a></li>
+            <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./images/fb.png" />Student Login</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ************body*********** -->
+
+
+    <div class="container-fluid" id="whole">
+        <div class="row">
+            <div class="col s12 m12 l12 xl12">
+
+                <h1 id="h1">WELCOME</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- **********************SCRIPT************** -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+
+
+
+    <script src='./UI/js/materialize.min.js'></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
+            authDomain: "quizappjs-43873.firebaseapp.com",
+            databaseURL: "https://quizappjs-43873.firebaseio.com",
+            projectId: "quizappjs-43873",
+            storageBucket: "quizappjs-43873.appspot.com",
+            messagingSenderId: "100363478078"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./app.js"></script>
+    <script>
+
+        $('.dropdown-trigger').dropdown();
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>
