@@ -25,6 +25,15 @@
             var token = result.credential.accessToken;
             // The signed-in user info.
             var user = result.user;
+            let obj=
+            {
+              name:user.displayName,
+              email:user.email,
+              url:user.photoURL,
+              uid:user.uid
+            }
+            firebase.database().ref('students').child(user.uid).set(obj);
+            localStorage.setItem("user",JSON.stringify(obj));
             // ...
             console.log(user)
            location.assign('./Pages/StudentDashboard/StudentDashboard.html')

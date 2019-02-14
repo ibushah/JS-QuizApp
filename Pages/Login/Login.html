@@ -24,7 +24,7 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a href="../../index.html">Home</a></li>
                         <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
-                        <li><a href="collapsible.html">Admin Dashboard</a></li>
+
                         <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="../../images/fb.png" /> Student
                                 Login</a></li>
                     </ul>
@@ -37,7 +37,7 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="#">Admin Login</a></li>
-            <li><a href="#">Admin Dashboard</a></li>
+
             <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./../../images/fb.png" />Student
                     Login</a>
             </li>
@@ -54,7 +54,7 @@
                 <div id="form">
 
                     <!-- ******************FORM HEADER************** -->
-                    
+
                     <h3 id="h3">ADMIN LOGIN</h3>
 
 
@@ -62,14 +62,14 @@
 
                         <div class="input-field col m12 lg12 s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="email"  type="email" class="validate">
+                            <input id="email" type="email" class="validate">
                             <label for="email">First Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col m12 lg12 s12">
                             <i class="material-icons prefix">https</i>
-                            <input  id="password" type="password" class="validate">
+                            <input id="password" type="password" class="validate">
                             <label for="password"> Password</label>
                         </div>
 
@@ -85,40 +85,40 @@
             </form>
         </div>
 
-
-
-        <!-- **********************SCRIPT************** -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- Compiled and minified JavaScript -->
-
-
-
-        <script src='../../UI/js/materialize.min.js'></script>
-
-
-        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
-                authDomain: "quizappjs-43873.firebaseapp.com",
-                databaseURL: "https://quizappjs-43873.firebaseio.com",
-                projectId: "quizappjs-43873",
-                storageBucket: "quizappjs-43873.appspot.com",
-                messagingSenderId: "100363478078"
-            };
-            firebase.initializeApp(config);
-        </script>
-        <script src="./Login.js"></script>
-        <script>
-
-            $('.dropdown-trigger').dropdown();
-
-            $(document).ready(function () {
-                $('.sidenav').sidenav();
-            });
-        </script>
     </div>
+
+    <!-- **********************SCRIPT************** -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+
+
+
+    <script src='../../UI/js/materialize.min.js'></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
+            authDomain: "quizappjs-43873.firebaseapp.com",
+            databaseURL: "https://quizappjs-43873.firebaseio.com",
+            projectId: "quizappjs-43873",
+            storageBucket: "quizappjs-43873.appspot.com",
+            messagingSenderId: "100363478078"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./Login.js"></script>
+    <script>
+
+        $('.dropdown-trigger').dropdown();
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,192 @@
+/* initial css */
+
+*
+{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+
+/* **********LOGO********* */
+
+
+
+#logo::first-letter{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+#logo
+{
+    margin-left: 5px !important;
+}
+
+#icon_prefix
+{
+   color: wheat !important;
+   font-style: oblique;
+}
+
+
+
+/* ********NAVBAR********* */
+
+nav
+{
+    background: linear-gradient(90deg,#08c758,#22c28d);
+    margin-top: -10px;
+}
+
+#mobile-demo
+{
+    background: linear-gradient(90deg,#08c758,#22c28d);
+}
+
+#mobile-demo li a
+{
+    color: white;
+}
+
+#mobile-demo li:hover
+{
+    background-color: rgb(5, 82, 56);
+}
+
+
+#fb
+{
+    width:23px;
+    float: left;
+    margin-top:22px; 
+    margin-right: 8px; 
+}
+#fb-li
+{
+    border: 1px solid rgb(6, 95, 54);
+    border-radius: 4px;
+    background-color:#3B5998 !important;
+}
+#fb-li:hover
+{
+    background-color: rgb(3, 70, 53) !important;
+    color:white;
+}
+
+
+
+#fb-mob
+{
+    width:23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 4px;
+}
+
+
+/* **************PROCTORING KEY*********** */
+
+.front
+{
+    margin-top: 100px;
+    margin-left: 10%;
+    border:1px solid black;
+    width: 80%;
+    height: 260px;
+}
+
+.top
+{
+    height:40px;
+    background: linear-gradient(90deg,#08c758,#22c28d);
+    border:1px solid green;
+    width: 100%;
+}
+
+.down p
+{
+    padding-top:20px; 
+   margin-left:5%; 
+}
+
+.down input
+{
+    margin-top: 15px !important;
+    border:1px solid black !important;
+    width:90% !important;
+    margin-left: 5% !important; 
+    text-indent:10px;
+}
+
+.down button
+{
+    width: 90%;
+    margin-left: 5%;
+    background: linear-gradient(90deg,#08c758,#22c28d);
+    margin-top: 1%;
+    height: 50px;
+    
+}
+
+/* 
+******************TEST**************** */
+
+
+.test
+{
+    margin-top: 50px;
+    width:100%;
+   
+    height: 350px;
+    border: 1px solid black;
+    background-color: rgb(225, 250, 234);
+}
+
+.head
+{
+    height:40px;
+    background: linear-gradient(90deg,#08c758,#22c28d);
+    border:1px inset green;
+    width: 100%;
+     
+}
+
+.test label
+{
+    padding: 50px;
+    color:black;
+
+}
+.radio
+{
+   padding: 10px;
+    width:100%;
+    border: 1px solid rgb(128, 125, 125);
+   
+}
+
+.test h5
+{
+    text-align: center;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.next
+{
+    width: 100%;
+    height:50px;
+    border: 1px inset green;
+    background: linear-gradient(90deg,#08c758,#22c28d);
+}
+
+#testDiv
+{
+    display: none;
+}

@@ -1,8 +1,8 @@
 
+
 // ******************VARIABLES****************
 
 let dataBelow = document.getElementById("dataBelow");
-
 
 
 // ******************LISTENERS**************
@@ -27,24 +27,33 @@ function loadCategories() {
   })
 }
 
+
+function logout()
+{
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+
+    location.assign("../../index.html")
+  }).catch(function(error) {
+    // An error happened.
+  });
+}
+
 // ***********LOAD CATEGORY TO LOCALSTORAGE*********** 
 
 function local(e)
 {
 console.log(e.innerHTML)
-localStorage.setItem("category",JSON.stringify(e.innerHTML));
+localStorage.setItem("test",JSON.stringify(e.innerHTML));
 }
 
 
-// ****************LOGOUT********************
 
-function fbLogout() {
-  firebase.auth().signOut().then(function () {
-    location.assign('../../index.html')
 
-  }).catch(function (error) {
-    // An error happened.
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
   });
-
-}
-
+        
