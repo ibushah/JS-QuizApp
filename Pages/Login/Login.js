@@ -4,6 +4,7 @@
     let email=document.getElementById("email");
     let password=document.getElementById("password");
     let adminForm=document.getElementById("adminForm");
+    let loader=document.getElementById("load");
 
 
 
@@ -19,16 +20,19 @@
     function submit(e)
     {
       e.preventDefault();
+      loader.style.display="block";
       firebase.auth().signInWithEmailAndPassword(email.value, password.value)
       .then(()=>
       {
         console.log("daaan")
+        loader.style.display="none";
 
         location.assign("../AdminDashboard/AdminDashboard.html")
       }
       
       ).catch(error=>{
         // Handle Errors here.
+        loader.style.display="none";
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...

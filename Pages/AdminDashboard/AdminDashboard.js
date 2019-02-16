@@ -10,10 +10,12 @@ let opt4 = document.getElementById("opt4");
 let select = document.getElementById("select");
 let time=document.getElementById("time");
 
+let testHead=document.getElementById("testHead");
 let hdTxt = document.getElementById("hdTxt");
 
 let next = document.getElementById("next");
 let submit = document.getElementById("submit");
+let loader=document.getElementById("load");
 
 let arr = []
 let category = "";
@@ -25,9 +27,28 @@ let category = "";
 // ***********************EVENT LISTENERS*********************
 next.addEventListener("click", nextQn);
 submit.addEventListener("click", submitQns);
+window.addEventListener("load",load)
 
 
 // ************************FUNCTIONS******************
+
+
+function load()
+{
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+        console.log("user is signed in")
+        loader.style.display="none";
+        testHead.style.display="block";
+
+        } else {
+        console.log("no user is signed in")
+        loader.style.display="none";
+        testHead.innerHTML="No user is signed in";
+        testHead.style.display="block";
+        }
+          });
+}
 
 function nextQn() {
     let dropDown = parseInt(select.options[select.selectedIndex].value - 1);
@@ -89,6 +110,7 @@ function nextQn() {
 
  function submitQns() {
 
+    load.style.display="block";
     let counter=0;
     if (arr.length) {
        for(let i=0;i<arr.length;i++)
@@ -102,14 +124,16 @@ function nextQn() {
                {
                 arr=[];
                 hdTxt.innerText = "QUESTION NO: " + parseInt(arr.length + 1);
+                load.style.display="none";
                    alert("Test Successfully Developed");
                    
                }
            })
            .catch((error)=>
            {
-
+            load.style.display="none";
             alert(error.message);
+            
             arr=[]
 
 
